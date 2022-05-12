@@ -1,0 +1,212 @@
+:root{
+    --brouwn-color:#7f7770;
+    --orang-color:#e2a355;
+}
+.row{--bs-gutter-x: 0}
+/* start nav */
+nav img{
+    width: 4rem;
+}
+nav .search{
+    width: 10rem;
+    height: 2rem;
+}
+.search input{
+    background-color: #c3bfbc;
+}
+.search svg{
+    font-size: 1.5rem ;
+    right: 2rem;
+    bottom: 10px;
+    color: var(--brouwn-color);
+}
+/* end nav */
+
+/* start landing */
+.landing {
+    background-image: url(../img/backgroundheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 92.11px);
+    background-position: center;
+}
+.landing .shape{
+    height: 120px;
+}
+.landing .shape:first-child{top: -50px;}
+.landing .title{
+    color:var(--orang-color);
+    font-size: 5rem;
+    text-shadow: -3px -1px 6px #a5a5a5;
+}
+@media screen and (max-width:1023px){
+    .landing .title{
+        font-size: 2.5rem;
+    }
+    .landing div p{
+        width: 50% !important;
+    }
+}
+@media screen and (max-width:500px){
+    .landing div p{
+        width: 100% !important;
+    }
+}
+.landing  a{
+    color: var(--brouwn-color);
+}
+.landing  div i{letter-spacing: 6px;color: #6e6e6e;}
+/* end landing */
+
+/* start trips */
+.Trips{
+    height: fit-content;
+    background-image: url(../img/Shadow_.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.Trips a{
+    color: #fff;
+    background-color: var(--brouwn-color);
+}
+.Trips .container-fluid h1{
+    font-size: 5rem;
+    color: var(--orang-color);
+}
+.Trips .row .feat div h2{
+    margin-left: -2rem;
+}
+.Trips .row .feat div{
+    background: var(--brouwn-color);
+    color: #fff;
+    margin: 0 auto;
+    width: fit-content;
+}
+.Trips .row .feat div img{height: 301px; width: 100%;}
+@media screen{
+    .Trips .title{ width: 40%;}
+}
+@media screen and (max-width:970px){
+    .Trips .title{ width: fit-content;}
+}
+/* end trips */
+
+/* start offers */
+
+.offers .row .Discount{
+    background-color: var(--brouwn-color);
+}
+.offers .row .Promo{
+    background-color: #deb37e;
+}
+.offers.row div img{height: 50rem;}
+.offers .row .Discount h2,.Promo h2{font-size: 5rem; color: #fff;}
+.offers .row .Discount p,.Promo p{ color: #fff; width: 50%;}
+.offers .row .Discount a,.Promo a{
+    background: var(--orang-color);
+    color: #fff; 
+    width: fit-content;
+}
+@media screen and (max-width:740px){
+    .offers .row .Discount,.Promo{padding: 4rem;}
+    .offers .row .Discount h2,.Promo h2{font-size: 2rem;}
+    .offers .row .Discount p,.Promo p{ width: 100%;}
+}
+/* end offers */
+
+/* start Hiking */
+    .Hiking{
+        height: 70vh;
+        background-color: var(--brouwn-color);
+        background-image: url(../img/Shadow_.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        color: #fff;
+    }
+    .Hiking img{height: 10rem;}
+    .Hiking img:first-child{top:-10px;}
+    .Hiking h3{
+        font-size: 3rem;
+    }
+    @media screen and (max-width:770px){
+        .Hiking h3{font-size: 2rem;}
+        .Hiking p{font-size: .5rem;}
+    }
+/* end Hiking */
+
+/* start explore */
+    .explore{
+        height: 90vh;
+        background: url(../img/last.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .explore img:first-child{top: -10px;}
+    .explore h4{
+        color:var(--orang-color);
+        font-size: 5rem;
+        text-shadow: -3px -1px 6px #a5a5a5;
+    }
+    .explore p{
+        font-size: 3rem;
+        text-shadow: -3px -1px 6px #a5a5a5 ;
+    }
+    .explore img{height: 7rem;}
+    @media screen and (max-width:770px){
+        .explore h4{font-size: 3rem;margin-top: 7rem!important;}
+        .explore p{font-size: 1.5rem;}
+        .explore{justify-content:start!important}
+    }
+/* end explore */
+
+/* start info */
+    .info{
+        height: fit-content;
+        background-image: url(../img/Shadow-revers.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+    .info .row div{
+        width: 300px;
+    }
+    .info h3{color: var(--orang-color);font-size: 3rem;}
+    .info .content p{bottom: -10rem;}
+    .info .content p span{bottom: -6rem; left: 25%;}
+    .info .content i{font-size: 10rem;}
+/* end explore */
+
+/* start Subscribe */
+    .Subscribe{
+        height: 60vh;
+        background-color: var(--orang-color);
+    }
+    .Subscribe h2{font-size: 5rem;color: #fff;}
+    .Subscribe input{outline: none;}
+    .Subscribe input[type='submit']{right: -5.5rem;background: var(--brouwn-color);color: #fff;}
+    .Subscribe img{height: 7rem;}
+    @media screen and (max-width:600px){
+        .Subscribe p{width:100% !important;}
+        .Subscribe input[type='submit']{right:-2px;}
+    }
+/* end Subscribe */
+
+/* start footer */
+footer{
+    height: fit-content;
+    background-color: var(--brouwn-color);
+    color: #fff;
+    padding: 15rem 0;
+}
+ul{
+    list-style: none;
+}
+.icon i{
+    color: var(--brouwn-color);
+    background-color: #fff;
+    
+}
+footer img{height: 7rem;}
+
+/* end footer */
+
